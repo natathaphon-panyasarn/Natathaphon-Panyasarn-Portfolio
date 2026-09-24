@@ -1,0 +1,297 @@
+/* โหมดสว่าง (ค่าเริ่มต้น) */
+:root {
+    --bg-color: #f9f9f9;
+    --text-color: #333333;
+    --nav-bg: #b07eff;
+}
+
+/* โหมดมืด */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --text-color: #ffffff;
+    --nav-bg: #b07eff;
+}
+
+/* นำตัวแปรสีมาใช้งาน */
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: all 0.3s ease; /* ทำให้เวลาเปลี่ยนสีดูนุ่มนวลขึ้น */
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: var(--nav-bg);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    font-weight: 500;
+}
+
+a {
+    color: var(--text-color);
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+/* ===============================
+   สไตล์สำหรับหน้า About / Portfolio 
+   =============================== */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left; /* จัดข้อความให้อ่านง่ายขึ้นในหน้า About */
+}
+
+/* ส่วนโปรไฟล์ */
+.profile-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: rgba(176, 126, 255, 0.1);
+    border-radius: 15px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid var(--nav-bg);
+    margin-bottom: 15px;
+    background-color: white; 
+}
+
+.section-heading {
+    border-left: 5px solid var(--nav-bg);
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+/*(Portfolio Table) */
+.table-responsive {
+    overflow-x: auto;
+}
+
+.portfolio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 30px;
+}
+
+.portfolio-table th, .portfolio-table td {
+    border: 1px solid #ccc;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+[data-theme="dark"] .portfolio-table th, 
+[data-theme="dark"] .portfolio-table td {
+    border: 1px solid #444;
+}
+
+.portfolio-table th {
+    background-color: var(--nav-bg);
+    color: white;
+    text-align: center;
+}
+
+.portfolio-table td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.table-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+    background-color: white;
+}
+
+/* สไตล์กล่อง Skills */
+.skills-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.skill-box {
+    border: 1px solid var(--nav-bg);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: transform 0.3s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(176, 126, 255, 0.2);
+}
+
+.skill-box ul {
+    padding-left: 20px;
+    line-height: 1.8;
+}
+
+/* Tag สำหรับแสดงเทคโนโลยี */
+.tech-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.tech-tags span {
+    background-color: var(--nav-bg);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ===============================
+   สไตล์สำหรับ Icon สร้างเอง (SVG)
+   =============================== */
+.icon-heading {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.custom-icon {
+    width: 24px;
+    height: 24px;
+    /* ใช้สีเดียวกับตัวอักษร*/
+    stroke: var(--text-color); 
+}
+
+/* ===============================
+   สไตล์สำหรับ Logo เทคโนโลยี
+   =============================== */
+.tech-tags span {
+    display: flex; /* ทำให้รูปและข้อความอยู่บรรทัดเดียวกัน */
+    align-items: center; /* จัดให้อยู่กึ่งกลางแนวตั้ง */
+    gap: 8px; /* ระยะห่างระหว่างรูปกับข้อความ */
+}
+
+.tech-logo {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* ทำให้โลโก้ GitHub เปลี่ยนเป็นสีขาวเมื่อเปิด Dark Mode */
+[data-theme="dark"] .github-logo {
+    filter: invert(1);
+}
+
+.table-emblem {
+    width: 40px;      
+    height: 40px;     
+    object-fit: contain; 
+    border-radius: 5px;  
+    background-color: white; 
+    border: 1px solid #b07eff;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Kanit', sans-serif; /* เปลี่ยนฟอนต์พื้นฐาน */
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.4s ease, color 0.4s ease; /* ทำให้เปลี่ยนโหมดมืด/สว่างนุ่มนวลขึ้น */
+    margin: 0;
+}
+
+/* สร้าง Keyframes สำหรับแอนิเมชัน */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* เรียกใช้แอนิเมชันกับเนื้อหาหลัก */
+main {
+    padding: 40px;
+    text-align: center;
+    animation: fadeInUp 0.8s ease-out forwards; /* เพิ่มแอนิเมชันตรงนี้ */
+}
+
+.menu a {
+    color: var(--text-color);
+    margin-right: 15px;
+    text-decoration: none;
+    position: relative;
+    padding-bottom: 5px;
+    transition: color 0.3s ease;
+}
+
+/* สร้างเส้นใต้ซ่อนไว้ */
+.menu a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--text-color);
+    transition: width 0.3s ease;
+}
+
+/* ขยายเส้นใต้เมื่อโฮเวอร์ */
+.menu a:hover::after {
+    width: 100%;
+}
+
+select#lang-switch, 
+button#theme-toggle, 
+#view-works {
+    transition: transform 0.3s ease, box-shadow 0.3s ease !important; /* บังคับใช้ทับ inline style */
+}
+
+select#lang-switch:hover, 
+button#theme-toggle:hover, 
+#view-works:hover {
+    transform: translateY(-3px) !important;
+    box-shadow: 0 5px 15px rgba(176, 126, 255, 0.4) !important;
+}
+
+.skill-box {
+    border: 1px solid var(--nav-bg);
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(176, 126, 255, 0.02); /* ใส่พื้นหลังจางๆ ให้กล่อง */
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.4s ease; /* ใช้ easing แบบเด้งนิดๆ */
+}
+
+.skill-box:hover {
+    transform: translateY(-8px) scale(1.02); /* ยกขึ้นและขยายขนาดนิดนึง */
+    box-shadow: 0 10px 20px rgba(176, 126, 255, 0.25);
+    border-color: #9055ff; /* สีเส้นขอบเข้มขึ้นเมื่อชี้ */
+}

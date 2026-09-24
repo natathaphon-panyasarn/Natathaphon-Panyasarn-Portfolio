@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - My Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22cursive%22 font-style=%22italic%22>N</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- แถบเมนูด้านบน -->
+    <header>
+    <nav>
+        <div class="menu">
+            <a href="index.html" id="nav-home">Home</a>
+            <a href="about.html" id="nav-about">About Me</a>
+            <a href="works.html" id="nav-works">Works</a>
+            <a href="contact.html" id="nav-contact">Contact & Connect</a>
+        </div>
+        <div class="controls">
+            <!-- ปุ่มเปลี่ยนภาษา -->
+            <select id="lang-switch" style="background-color: var(--nav-bg); color: var(--text-color); border: 1px solid var(--text-color); padding: 10px 20px; cursor: pointer; border-radius: 10px;">
+                <option value="en" style="font-weight: 500;">English</option>
+                <option value="th" style="font-weight: 500;">ไทย</option>
+                <option value="jp" style="font-weight: 500;">日本語</option>
+            </select>
+            <!-- ปุ่มเปลี่ยนโหมด -->
+            <button id="theme-toggle" style="background-color: var(--nav-bg); color: var(--text-color); border: 1px solid var(--text-color); padding: 10px 20px; cursor: pointer; border-radius: 10px;">Dark</button>
+        </div>
+    </nav>
+    </header>
+
+    <!-- เนื้อหาหลัก -->
+     <main>
+        <section id="about-content" class="about-container">
+            <h1 id="about-title">About Me</h1>
+            
+            <!-- ส่วนข้อมูลส่วนตัว -->
+            <div class="profile-section">
+                <img src="Image\Profile portfolio.jpg" alt="Profile Picture" class="profile-pic">
+                <h2 id="profile-name">Natathaphon Panyasarn</h2>
+                <p id="profile-dob">Date of Birth: 05 / November / 2007</p>
+            </div>
+
+            <!-- ส่วนตารางประวัติการศึกษา -->
+            <h3 class="section-heading" id="edu-heading">Education History</h3>
+            <div class="table-responsive">
+                <table class="portfolio-table">
+                    <thead>
+                        <tr>
+                            <th id="th-emblem">Emblem</th>
+                            <th id="th-level">Level</th>
+                            <th id="th-school">Institution</th>
+                            <th id="th-year">Academic Year</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><img src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t39.30808-6/448637095_3725709014344060_8492273393513997943_n.jpg?stp=dst-jpg_tt6&cstp=mx1150x1150&ctp=p526x296&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGp7xlqxpq1PknZ1yAmPQFK0XnJzM1jQ4_RecnMzWNDj0ubfi0BG1ZmOy5OCClFgw3pova8gzZChitLGWzP4jvW&_nc_ohc=BSPpDvWBI4IQ7kNvwG3Ipj-&_nc_oc=AdpP9Q7UXdM-Vsj5UxJuRAagGscQaUV2y2OfAnULYb2ht33AcE7mJ4vWR-1voDR_nLRMr_UUemeCCZxzgo_tVJCR&_nc_zt=23&_nc_ht=scontent.fbkk12-4.fna&_nc_gid=3R8eOwMiwEie1xIxMraj8Q&_nc_ss=7b2a8&oh=00_AQI8KpXw3pE_tdtaGOakPJEwILtd_VvnKEfBhE4dXoLPbg&oe=6ABB16FF" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-1">Kindergarten 1 - Grade 1</td>
+                            <td id="edu-school-1">Jatuporn Wittaya School</td>
+                            <td>2011 - 2015</td> <!-- 2554-2558 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/571259765_1749894799276825_2541051876805920915_n.png?stp=dst-png&cstp=mx1970x1970&ctp=s1970x1970&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHln9Kly194wa23MuexbjSmhc-uiInON9mFz66Iic432TrDHeqpdbCjlR8Gcoz5-s_bv8Z_ULk0cxrRWlzg-7I8&_nc_ohc=Q0um34nzdcEQ7kNvwEl_kBv&_nc_oc=Adr71giFpShwpGqwt-X99qjPQahCIxYjU2Ge3acndaPyxPLxtN9Zodop2xfXk0nc4k5nqqYkk-NkEG-Y11FxlT8i&_nc_zt=23&_nc_ht=scontent.fbkk8-4.fna&_nc_gid=NcbE1jRBmMVNG_61iRSETg&_nc_ss=7b2a8&oh=00_AQJ5n6plLycFRZ78FrsfMOMuetvek3p5FvH6mX8rSXTOcQ&oe=6ABB2470" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-2">Grade 2</td>
+                            <td><a href="https://www.google.com/maps/place/Nuan+Noi+Phitthaya+School/@15.2324221,100.496043,8z/data=!4m10!1m2!2m1!1sNuannoi+Pittaya+School!3m6!1s0x3122e59ecbfc90d7:0xe5aa2c1a105f0c6c!8m2!3d16.704046!4d103.041114!15sChZOdWFubm9pIFBpdHRheWEgU2Nob29skgERZWxlbWVudGFyeV9zY2hvb2zgAQA!16s%2Fg%2F1tdh5xtf?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" id="edu-school-2">Nuannoi Pittaya School </a></td>
+                            <td>2015 - 2016</td> <!-- 2558-2559 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk8-4.fna.fbcdn.net/v/t39.30808-6/569729839_1296311942510532_7908475508765924818_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx2024x2024&ctp=s2024x2024&_nc_cat=108&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHIauo1Z08xvDB_khixJwQejRHETFgZlMaNEcRMWBmUxvsvqafXx_xkhl6TbE2CaHF1fPUOHj9ByIVvY6B3NCSp&_nc_ohc=lfGvWtvQ-6EQ7kNvwHJ0UkR&_nc_oc=AdpLN_6_ViBNMouH74eE06On-4VWTcoKcjrPY25yQzo32wXPvk3BlaaMfxFwDbIxICL9Ft7hT6bp6bYOB3Ez7NlH&_nc_zt=23&_nc_ht=scontent.fbkk8-4.fna&_nc_gid=QosdJ5-cE-yQEzhoO0d6gA&_nc_ss=7b2a8&oh=00_AQJuxOiibi6jO8YcptvGHpKqDozhLRwUZfJHtTd_7jcy2w&oe=6ABB287F" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-3">Grade 3 - Grade 6</td>
+                            <td><a href="https://www.google.com/maps/place/Nong+No+Witthayakhom+School/@16.7043581,103.0259541,17z/data=!3m1!4b1!4m6!3m5!1s0x3122e57412d66fe5:0x10c120c497e67c93!8m2!3d16.704353!4d103.030825!16s%2Fg%2F1hff492w6?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" id="edu-school-3">Nong No Wittayakarn School</a></td>
+                            <td>2016 - 2020</td> <!-- 2559-2563 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/571136132_122172612776443880_5001791016737269944_n.jpg?stp=dst-jpg_tt6&cstp=mx1000x1000&ctp=s1000x1000&_nc_cat=110&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEkbtJvQEBdxd7ERsK5ABwoFiYKM0lwa3QWJgozSXBrdD9Do_MLWRa5jYnw8hjvaJKKubdsq1D06Sf8yZCIYZxJ&_nc_ohc=dh-4UxEhEw8Q7kNvwGSlCNn&_nc_oc=AdrJ2UTchP7OVkBIyAvT_vsaHqDpTUPHLU8D1RsSZ7fGkVEDoz1RLDOFJHRNrgg5HI_mDGUBDkHy3TgvADL-4aiy&_nc_zt=23&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=6IYA2DFrPbLTzyV6DiXiTw&_nc_ss=7b2a8&oh=00_AQItqxTkmYzQcTHi-23vQlk8HfLe3F3Gie0RTD5_wUiAaQ&oe=6ABB2256" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-4">Grade 7 - Grade 9</td>
+                            <td><a href="https://www.google.com/maps/place/Srikranuanwittayakom+School/@16.7222364,103.0761702,16.25z/data=!4m6!3m5!1s0x3122e64fffffffff:0xa0b696f8b333c597!8m2!3d16.7217892!4d103.0811985!16s%2Fg%2F121g1_dc?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" id="edu-school-4">Srikranuanwittayakom School</a></td>
+                            <td>2020 - 2023</td> <!-- 2563-2566 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk13-3.fna.fbcdn.net/v/t39.30808-6/570524553_122253523214220348_2201035820377568013_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx595x595&ctp=s595x595&_nc_cat=111&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeHzctCSavaZcFUelh2krJvix3MoSUYDaCfHcyhJRgNoJ7GB8sFFyhFzlsNuHnCNw3OnhL6lqKYUOFDU1JZInm3d&_nc_ohc=nxJ_4n5v9ekQ7kNvwE7BXFk&_nc_oc=AdqUemImWb45Q05n57EsMHup316ijZbucriRpyGq_d7cKjimnsQKSv7YmJilauc-CsHaWHGRYRqTAVUsxjIkCZDp&_nc_zt=23&_nc_ht=scontent.fbkk13-3.fna&_nc_gid=T1IqlhhZsASfWWOX2IS4mA&_nc_ss=7b2a8&oh=00_AQKu-wq0DHHp9Cwz32TiQaniy1gD_TAiAfhzgGlFkz8hQQ&oe=6ABAFFBD" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-5">Vocational Certificate 1</td>
+                            <td><a href="https://www.google.com/maps/place/Kranuan+Industrial+and+Community+Education+College/@16.6951601,103.0205829,17z/data=!4m15!1m8!3m7!1s0x3122e565e5a7fa99:0xa99b0a6a2e4e963!2sKranuan+Industrial+and+Community+Education+College!8m2!3d16.6951601!4d103.0205829!10e5!16s%2Fg%2F1th7kcf6!3m5!1s0x3122e565e5a7fa99:0xa99b0a6a2e4e963!8m2!3d16.6951601!4d103.0205829!16s%2Fg%2F1th7kcf6?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" id="edu-school-5">Kranuan Industrial and Community Education College </a></td>
+                            <td>2023 - 2024</td> <!-- 2566-2567 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/569584471_1408774711248022_4576877874435134226_n.jpg?stp=cp6_dst-jpg_tt6&cstp=mx500x500&ctp=s500x500&_nc_cat=104&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFuv5Bbs8knjAfU21ahO7wZ6acQFJWBaLHppxAUlYFosVYntmpjQQa4eW-HIKZWPj9JXAnJPiZvWxcVN2QDIioT&_nc_ohc=PesneCpq2mcQ7kNvwGs38-4&_nc_oc=AdqndgCWdfC1iN2JU40JqsY4niDIk3WUrp8xYIk62dQGzO71PI4MSHK4mQZgSom82H7ILHk3z-yOe50SonyA5Ago&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&_nc_gid=HTdReoKHBORkUEY38xH8Kw&_nc_ss=7b2a8&oh=00_AQLB59lymOi2crhYutSgRFzSFEkcVO3kNKyw5hIPE125Cw&oe=6ABB2482" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-6">Vocational Certificate 2 - 3</td>
+                            <td><a href="https://www.google.com/maps/place/Dusit+Commercial+College/data=!4m2!3m1!1s0x0:0xe67ab89fc5f6fad9?sa=X&ved=1t:2428&ictx=111" id="edu-school-6">Dusit Commercial College</a></td>
+                            <td>2024 - 2026</td> <!-- 2567-2569 -->
+                        </tr>
+                        <tr>
+                            <td><img src="https://scontent.fbkk8-1.fna.fbcdn.net/v/t39.30808-6/571096010_1249090147253222_6137905070764926299_n.jpg?stp=dst-jpg_tt6&cstp=mx960x960&ctp=s960x960&_nc_cat=103&_nc_map=urlgen_bucketless&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeEdUliX4L1uM122ANqolJEdKebNXuvHTtop5s1e68dO2gy0WSGMkuYTNSPHY8nqKQkSvW6x52_NNx4ZCEwnGEDP&_nc_ohc=LwvMqj0vSioQ7kNvwHT-pta&_nc_oc=AdrSZ2q5zDQN6nSALxJbru3BonoiOlXtk1Gh_ddN_FmZFU5ArLl-mBTaJu1D9rlo6LaMnmAXjxPnSA2E0QVkgArm&_nc_zt=23&_nc_ht=scontent.fbkk8-1.fna&_nc_gid=5ZKmmMfRvC62bHIU_GE8QA&_nc_ss=7b2a8&oh=00_AQJzvdJAZEi_xtLuykXqkg5b9opNdOvuQnNa3F3_nx_qfA&oe=6ABB0A5A" class="table-emblem" alt="Emblem"></td>
+                            <td id="edu-level-7">Bachelor's Degree (Present)</td>
+                            <td><a href="https://www.google.com/maps/place/Sripatum+University/@13.8551327,100.5849087,17z/data=!4m10!1m2!2m1!1ssripatum!3m6!1s0x30e29d3b2deb49ff:0xd2ed4165c39645cc!8m2!3d13.8556296!4d100.5854846!15sCghzcmlwYXR1bSIDiAEBWgoiCHNyaXBhdHVtkgEScHJpdmF0ZV91bml2ZXJzaXR5mgEkQ2hkRFNVaE5NRzluUzBWSlEwRm5TVU5JYTI5UE1YQjNSUkFC4AEA-gEECAAQSA!16zL20vMDh0azM4?entry=ttu&g_ep=EgoyMDI2MDkyMS4wIKXMDSoASAFQAw%3D%3D" id="edu-school-7">Sripatum University</a></td>
+                            <td id="edu-year-7">2026 - Present</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- ส่วนทักษะความสามารถ -->
+            <h3 class="section-heading" id="skills-heading">Skills & Competencies</h3>
+            <div class="skills-grid">
+                
+                <!-- กล่องภาษา -->
+                <div class="skill-box">
+                    <h4 class="icon-heading">
+                        <!-- SVG Icon สร้างเอง (รูปกล่องข้อความ) -->
+                        <svg class="custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                        </svg>
+                        <span id="skill-lang-title">Languages Skills</span>
+                    </h4>
+                    <ul>
+                        <li><b id="lang-th">Thai:</b> <span id="lang-th-desc">Native</span></li>
+                        <li><b id="lang-en">English:</b> <span id="lang-en-desc">Conversational</span></li>
+                        <li><b id="lang-jp">Japanese:</b> <span id="lang-jp-desc">Currently studying</span></li>
+                    </ul>
+                </div>
+
+                <!-- กล่องเทคโนโลยี -->
+<!-- กล่องเทคโนโลยี -->
+                <div class="skill-box">
+                    <h4 class="icon-heading">
+                        <svg class="custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                            <line x1="8" y1="21" x2="16" y2="21"></line>
+                            <line x1="12" y1="17" x2="12" y2="21"></line>
+                        </svg>
+                        <span id="skill-tech-title">Technologies</span>
+                    </h4>
+                    <div class="tech-tags">
+                        <!-- เรียกใช้รูปภาพจาก Devicon CDN -->
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" alt="Python" class="tech-logo"> Python</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" alt="HTML" class="tech-logo"> HTML</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" alt="CSS" class="tech-logo"> CSS</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" alt="JavaScript" class="tech-logo"> JavaScript</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" alt="Git" class="tech-logo"> Git</span>
+                        <span><img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg" alt="GitHub" class="tech-logo github-logo"> GitHub</span>
+                    </div>
+                </div>
+
+                <!-- กล่องอื่นๆ -->
+                <div class="skill-box" style="grid-column: 1 / -1;">
+                    <h4 class="icon-heading">
+                        <!-- SVG Icon -->
+                        <svg class="custom-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <circle cx="12" cy="12" r="6"></circle>
+                            <circle cx="12" cy="12" r="2"></circle>
+                        </svg>
+                        <span id="skill-other-title">Goals & Other Competencies</span>
+                    </h4>
+                    <ul>
+                        <li id="other-desc-1">Interested in WebXR and Augmented Reality (AR) technology for Web Browser applications.</li>
+                        <li id="other-desc-2">Apply my knowledge and skills to create positive change in society.</li>
+                        <li id="other-desc-3">Committed to preparing for the MEXT Scholarship at Nara Institute of Science and Technology.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
